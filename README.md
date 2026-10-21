@@ -4,12 +4,18 @@
 
 ## Instalação
 
+Requisitos: [Claude Code](https://claude.com/claude-code), Git e Windows PowerShell.
+
 ```powershell
+git clone https://github.com/EnzoMDias/newAgents.git
+cd newAgents
 .\install.ps1                        # para todos os projetos (~/.claude)
-.\install.ps1 -Projeto C:\meu\app    # só em um projeto
+.\install.ps1 -Projeto C:\meu\app    # ou só em um projeto
 ```
 
-Reinicie o Claude Code depois. Para atualizar, edite os arquivos aqui e rode de novo.
+Se o PowerShell bloquear o script, rode `powershell -ExecutionPolicy Bypass -File .\install.ps1`.
+
+Reinicie o Claude Code depois. Para atualizar, rode `git pull` e o `install.ps1` de novo. Para personalizar, edite os arquivos aqui e reinstale.
 
 ## Uso
 
@@ -79,3 +85,7 @@ skills/squad/      orquestrador + templates do quadro
 skills/conselho/   decisões por conselho
 install.ps1
 ```
+
+## Licença
+
+[MIT](LICENSE)
